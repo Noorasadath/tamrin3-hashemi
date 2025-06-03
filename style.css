@@ -94,11 +94,38 @@ textarea::placeholder {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding-left: 24px;
 }
 .card-title{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 24px;
+    color: #9a9a9a;
+}
+.card-view h3{
+    margin-bottom: 0;
+}
+.card-Des{
+     margin-top: 0;
+     color: #9a9a9a;
+}
+.card-checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+}
+.options h4{
+    margin: 0;
+}
+.card-checkbox input{
+    width: 18px;
+    height: 18px;
 }
