@@ -201,11 +201,16 @@ height: 18px;
 }
 .titlebar{
    width: 366px;
-   height: 813px;
+   height: auto;
+   padding-left: 10px;
 }
 .container {
   height: auto;
   min-height: 100%;
   overflow-x: hidden;
+}
+.buttons{
+    margin-bottom: 24px;
+    align-items: center;
 }
 }
