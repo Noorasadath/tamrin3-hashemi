@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="container">
@@ -12,8 +13,8 @@
         <div class="titlebar">
             <div class="sidebar">
                 <div class="titleSection">
-                <input type="text" placeholder="Title" name="titleWork">
-                <textarea placeholder="Description" name="descripWork"></textarea>
+                <input type="text" placeholder="Title" id="titleWork">
+                <textarea placeholder="Description" id="descripWork"></textarea>
             </div>
             <div class="subtasks">
                 <div class="subtasks-title">
@@ -50,24 +51,24 @@
             </div>
             </div>
             <div class="buttons"> 
-                    <button class="clearAll">Clear All</button>
-                    <button class="createCard">Create Card</button>
+                    <button class="clearAll" id="clearAll" >Clear All</button>
+                    <button class="createCard" id="createCard">Create Card</button>
             </div>
         </div>
 
 
         <div class="works">
             <div class="worksection">
-                <div class="todo">
+                <div class="todo" id="todo">
                     <h1>TO DO</h1>
                     <div class="card-view">
-                        <h3>Make a Kanban App</h3>
+                        <h3 >Make a Kanban App</h3>
                         <div class="card-title">
                             <h5 class="date">12th Jan</h5>
                             <span>.</span>
                             <h5 class="assign-to">Assigned to Taha</h5>
                         </div>
-                        <h5 class="card-Des">Please use trello and designs in Dribbble as<br> reference. And carry on...</h5>
+                        <h6 class="card-Des">Please use trello and designs in Dribbble as<br> reference. And carry on...</h6>
                         <div class="card-checkbox">
                             <div class="options">
                                 <input type="checkbox" name="tasks">
@@ -135,5 +136,7 @@
             </div>
         </div>
     </div>
+
+    <script src="func.js"></script>
 </body>
 </html>
