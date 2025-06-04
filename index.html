@@ -11,8 +11,8 @@
 
         <div class="titlebar">
             <div class="titleSection">
-                <h3>Title</h3>
-                <textarea placeholder="Description"></textarea>
+                <input type="text" placeholder="Title" name="titleWork">
+                <textarea placeholder="Description" name="desWork"></textarea>
             </div>
             <div class="subtasks">
                 <div class="subtasks-title">
@@ -25,15 +25,31 @@
                     </div>
                 </div>
                 <div class="subtasks-title">
-                    <div class="issues">
-                        <img src="image/person.png" alt="person">
-                        <h4>Assignee <span style="color: red;">*</span></h4>
+                    <div class="asign-bar">
+                         <div class="asign-title">
+                            <img src="image/person.png" alt="person">
+                            <h4>Assignee <span style="color: red;">*</span></h4>
+                         </div>
+                            <div class="card-radiobtn">
+                            <div class="options">
+                                <input type="radio" name="persons">
+                                 <h4>Taha Hosseinpour</h4>
+                            </div>
+                            <div class="options">
+                                <input type="radio" name="persons">
+                                 <h4>S.h Mostafavi</h4>
+                            </div>
+                            <div class="options">
+                                <input type="radio" name="persons">
+                                 <h4>Milad Mirzaei</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="buttons"> 
-                <button class="clearAll">Clear All</button>
-                <button class="createCard">Create Card</button>
+                <div class="buttons"> 
+                    <button class="clearAll">Clear All</button>
+                    <button class="createCard">Create Card</button>
+                </div>
             </div>
         </div>
 
@@ -49,7 +65,59 @@
                             <span>.</span>
                             <h5 class="assign-to">Assigned to Taha</h5>
                         </div>
-                        <h5 class="card-Des">Please use trello and designs in Dribbble as reference. And carry on...</h5>
+                        <h5 class="card-Des">Please use trello and designs in Dribbble as<br> reference. And carry on...</h5>
+                        <div class="card-checkbox">
+                            <div class="options">
+                                <input type="checkbox" name="tasks">
+                                 <h4>Create an App</h4>
+                            </div>
+                            <div class="options">
+                                <input type="checkbox" name="tasks">
+                                 <h4>Write a letter</h4>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="card-view">
+                        <h3>Make a Kanban App</h3>
+                        <div class="card-title">
+                            <h5 class="date">12th Jan</h5>
+                            <span>.</span>
+                            <h5 class="assign-to">Assigned to Taha</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="todo">
+                    <h1>DOING</h1>
+                    <div class="card-view">
+                        <h3>Make a Kanban App</h3>
+                        <div class="card-title">
+                            <h5 class="date">12th Jan</h5>
+                            <span>.</span>
+                            <h5 class="assign-to">Assigned to Taha</h5>
+                        </div>
+                        <h5 class="card-Des">Please use trello and designs in Dribbble as <br>reference. And carry on...</h5>
+                        <div class="card-checkbox">
+                            <div class="options">
+                                <input type="checkbox" name="tasks">
+                                 <h4>Create an App</h4>
+                            </div>
+                            <div class="options">
+                                <input type="checkbox" name="tasks">
+                                 <h4>Write a letter</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="todo">
+                    <h1>DONE</h1>
+                    <div class="card-view">
+                        <h3>Make a Kanban App</h3>
+                        <div class="card-title">
+                            <h5 class="date">12th Jan</h5>
+                            <span>.</span>
+                            <h5 class="assign-to">Assigned to Taha</h5>
+                        </div>
+                        <h5 class="card-Des">Please use trello and designs in Dribbble as<br> reference. And carry on...</h5>
                         <div class="card-checkbox">
                             <div class="options">
                                 <input type="checkbox" name="tasks">
