@@ -20,9 +20,6 @@ function clear(){
 function create(){
     cardCount++;
     let options = document.querySelector("input[name='persons']:checked")
-    let workstitle = document.getElementById("input2")
-    let works = document.getElementById("work1");
-    works.value = workstitle.value
     let card = document.createElement("div")
     card.className = "card-view"
     card.id = "card-" + cardCount;
@@ -44,7 +41,7 @@ function create(){
       <div class="card-checkbox">
          <div class="options">
              <input type="checkbox" name="tasks">
-             <h4>${works.value}</h4>
+             <h4></h4>
           </div>                  
        </div>
 
