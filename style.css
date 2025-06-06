@@ -80,6 +80,12 @@ textarea::placeholder {
     flex-direction: row;
     align-items: center;
 }
+.asign-title1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 186px;
+}
 .card-radiobtn{
     display: flex;
     flex-direction: column;
@@ -164,7 +170,7 @@ height: 18px;
     flex-direction: column;
     align-items: flex-start;
     gap: 11px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .options{
     display: flex;
@@ -174,6 +180,13 @@ height: 18px;
 }
 .options h4{
     margin: 0;
+}
+.input2{
+    margin: 0;
+    border: none;
+    width: 200px !important;
+    height: 23px !important;
+    font-size: 15px;
 }
 .card-checkbox input{
     width: 18px;

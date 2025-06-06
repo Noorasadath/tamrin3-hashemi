@@ -1,5 +1,6 @@
 let btncreate=document.getElementById("createCard")
 let btnclear=document.getElementById("clearAll")
+let btntasks=document.getElementById("btntask")
 let title=document.getElementById("titleWork")
 let description=document.getElementById("descripWork")
 let time = new Date()
@@ -16,10 +17,12 @@ function clear(){
       description.value = ""
 }
 
-
 function create(){
     cardCount++;
-    let options = document.querySelector("input[name='persons']:checked");
+    let options = document.querySelector("input[name='persons']:checked")
+    let workstitle = document.getElementById("input2")
+    let works = document.getElementById("work1");
+    works.value = workstitle.value
     let card = document.createElement("div")
     card.className = "card-view"
     card.id = "card-" + cardCount;
@@ -38,6 +41,12 @@ function create(){
             <h5 class="assign-to">Assigned to ${options.value}</h5>
       </div>
       <h6 class="card-Des">${description.value}</h6>
+      <div class="card-checkbox">
+         <div class="options">
+             <input type="checkbox" name="tasks">
+             <h4>${works.value}</h4>
+          </div>                  
+       </div>
 
       `
 
@@ -47,8 +56,24 @@ function create(){
 
 }
 
+function tasks()
+{
+  let job = document.createElement("div")
+  job.className="card-checkbox"
+
+  job.innerHTML =  `
+  <div class="options" >
+     <input type="checkbox" name="work1" placeholder="Write Something" id="work1">
+     <input type="text" placeholder="Write Something" class="input2" id="input2">
+   </div>
+  `
+
+  document.getElementById("asign-bar1").appendChild(job)
+}
+
 btncreate.addEventListener("click",create)
 btnclear.addEventListener("click", clear)
+btntasks.addEventListener("click", tasks)
 
 
 let zones = document.querySelectorAll(".todo");
