@@ -149,6 +149,7 @@ height: 18px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 344px;
 }
 .todo h1{
     margin-bottom: 0;
